@@ -3,7 +3,7 @@ package za.ac.cput.repository.repository;
 /*
 Employee-management-system.java
 EmployeeDepartmentRepositoryTest.java
-Author: Martinez Safari 219325332
+Author: Martinez Safari  219325332
 Date: 09/04/2022
  */
 
@@ -12,11 +12,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import za.ac.cput.entity.EmployeeDepartment;
 import za.ac.cput.factory.EmployeeDepartmentFactory;
-
-
 import za.ac.cput.repository.EmployeeDepartmentRepository;
 import za.ac.cput.util.Helper;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -58,6 +55,7 @@ public class EmployeeDepartmentRepositoryTest {
 
     @Test
     void d_getAll() {
+
         System.out.println("Get All Repository contents" + repository.getAll());
     }
 }

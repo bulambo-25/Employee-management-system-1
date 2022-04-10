@@ -3,7 +3,7 @@ package za.ac.cput.repository.repository;
 /*
 Employee-management-system.java
 DepartmentRepositoryTest.java
-Author: Martinez Safari 219325332
+Author: Martinez Safari   219325332
 Date: 09/04/2022
  */
 
@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class DepartmentRepositoryTest  {
     private static DepartmentRepository repository=DepartmentRepository.getRepository();
     private static Department department= DepartmentFactory
-            .createDepartment("c222","cool", "cool Room");
+            .createDepartment("c123","cool", "cool Room");
 
 
     @Test

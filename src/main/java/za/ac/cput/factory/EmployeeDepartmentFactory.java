@@ -1,9 +1,8 @@
 package za.ac.cput.factory;
-
 /*
 Employee-management-system.java
 EmployeeDepartmentFactory.java
-Author: Martinez Safari 219325332
+Author: Martinez Safari  219325332
 Date: 07/04/2022
  */
 
