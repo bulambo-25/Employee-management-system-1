@@ -1,8 +1,9 @@
 package za.ac.cput.entity;
 /*
-* @author Reanetsi Sholoko 218160402
-*
-* */
+ * @author Reanetsi Sholoko
+ * student no: 218160402
+ *
+ * */
 public class EmployeeRole {
 
     private String employeeId,roleId;
