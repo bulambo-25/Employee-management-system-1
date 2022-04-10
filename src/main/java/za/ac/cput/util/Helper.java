@@ -11,8 +11,10 @@ public class Helper
     {
         return(s == null || s.isEmpty() || s.equalsIgnoreCase("null"));
     }
+
     public static String generateID()
     {
+
         return UUID.randomUUID().toString();
     }
 
