@@ -1,5 +1,5 @@
 package za.ac.cput.factory;
-/*PayrollFactory.java
+/* PayrollFactory.java
  Factory for the PayrollFactory
  Author: Taariq Khan (219231141)
  Date: 2 April 2022*/

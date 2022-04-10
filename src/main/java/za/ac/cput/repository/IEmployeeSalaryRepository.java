@@ -1,5 +1,5 @@
 package za.ac.cput.repository;
-/*IEmployeeSalaryRepository.java
+/* IEmployeeSalaryRepository.java
  Interface for the IEmployeeSalaryRepository
  Author: Taariq Khan (219231141)
  Date: 2 April 2022*/
