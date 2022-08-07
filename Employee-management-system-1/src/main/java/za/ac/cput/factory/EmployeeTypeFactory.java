@@ -12,10 +12,8 @@ import za.ac.cput.util.Helper;
 public class EmployeeTypeFactory {
 
     public  static EmployeeType createGender(String streetName, String postalCode,String areaName,String City){
-        EmployeeType gender=new EmployeeType.Builder()
-
-                .setStreetName(streetName).setPostalCode(postalCode).setAreaName(areaName).setCity(City).setEmployeeType(Helper.generateID()).build();
-        return gender;
+        return new EmployeeType.Builder().setStreetName(streetName).setPostalCode(postalCode).setStreetName(areaName)
+                .setCity(City).build();
     }
     public static void main(String[] args) {
         System.out.println(EmployeeTypeFactory.createGender("","","",""));

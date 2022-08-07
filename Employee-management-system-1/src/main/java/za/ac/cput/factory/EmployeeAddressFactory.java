@@ -10,11 +10,9 @@ import za.ac.cput.entity.EmployeeAddress;
 import za.ac.cput.util.Helper;
 
 public class EmployeeAddressFactory {
-    public  static EmployeeAddress createEmployeeAddress( ){
+    public  static EmployeeAddress createEmployeeAddress(String employeeID, String employeeTypeID){
 
-
-        EmployeeAddress employeeAddress=new EmployeeAddress.Builder().setEmployeeID(Helper.generateID()).setEmployeeTypeID(Helper.generateID()).build();
-        return employeeAddress;
+        return new EmployeeAddress.Builder().setEmployeeID(employeeID).setEmployeeTypeID(employeeTypeID).build();
 
     }
 }

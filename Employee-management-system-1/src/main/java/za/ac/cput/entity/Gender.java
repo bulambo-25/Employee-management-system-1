@@ -1,13 +1,23 @@
 package za.ac.cput.entity;
-/*
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+
+import static javax.persistence.GenerationType.SEQUENCE;
+
+/*
 AUTHOR Mutamba Prince Bulambo
 Student Number 220177767
 Date April 9 2022
-
- */
+*/
+@Entity
 public class Gender {
-
+    @Id
+    @SequenceGenerator(name ="genderID_Sequence",sequenceName = "ORACLE_DB_SEQ_ID",
+            allocationSize = 7,initialValue = 200171763)
+    @GeneratedValue(strategy = SEQUENCE ,generator = "genderID_Sequence")
     private  String genderID;
     private  String genderType;
     private  String description;
@@ -15,6 +25,10 @@ public class Gender {
         this.genderID= builder.genderID;
         this.genderType = builder.genderType;
         this.description= builder.description;
+    }
+
+    public Gender() {
+
     }
 
     public String getGenderID() {

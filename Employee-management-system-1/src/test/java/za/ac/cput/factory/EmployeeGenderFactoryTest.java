@@ -9,6 +9,6 @@ class EmployeeGenderFactoryTest {
     @Test
     void createEmployeeGender() {
 
-        System.out.println(EmployeeGenderFactory.createEmployeeGender());
+        System.out.println(EmployeeGenderFactory.createEmployeeGender("23243","342562"));
     }
 }

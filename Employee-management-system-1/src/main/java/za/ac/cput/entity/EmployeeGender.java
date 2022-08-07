@@ -1,4 +1,8 @@
 package za.ac.cput.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /*
 
 AUTHOR Mutamba Prince Bulambo
@@ -6,7 +10,10 @@ Student Number 220177767
 Date April 9 2022
 
  */
+@Entity
 public class EmployeeGender {
+    @Id
+    private  String id;
     private  String EmployeeId;
     private  String genderID;
 
@@ -15,6 +22,11 @@ public class EmployeeGender {
         this.EmployeeId= builder.EmployeeId;
 
     }
+
+    public EmployeeGender() {
+
+    }
+
     public String getEmployeeId() {
         return EmployeeId;
     }

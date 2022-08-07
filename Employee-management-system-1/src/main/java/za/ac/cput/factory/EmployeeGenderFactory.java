@@ -11,10 +11,9 @@ import za.ac.cput.entity.EmployeeGender;
 import za.ac.cput.util.Helper;
 
 public class EmployeeGenderFactory {
-    public  static EmployeeGender createEmployeeGender( ){
-    EmployeeGender employeeGender=new EmployeeGender.Builder().
-            setEmployeeId(Helper.generateID()).setGenderID(Helper.generateID()).build();
-        return employeeGender;
+    public  static EmployeeGender createEmployeeGender( String EmployeeId, String genderID){
+
+        return new EmployeeGender.Builder().setEmployeeId(EmployeeId).setGenderID(genderID).build();
 }
 
 }

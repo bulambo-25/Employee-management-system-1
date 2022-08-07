@@ -12,8 +12,8 @@ import za.ac.cput.util.Helper;
 public class GenderFactory {
 
     public  static Gender createGender( String genderType, String description ){
-        Gender gender=new Gender.Builder().setGenderID(Helper.generateID())
-                .setGenderType(genderType).setDescription(description).build();
-        return gender;
+
+
+        return new Gender.Builder().setGenderType(genderType).setDescription(description).build();
     }
 }

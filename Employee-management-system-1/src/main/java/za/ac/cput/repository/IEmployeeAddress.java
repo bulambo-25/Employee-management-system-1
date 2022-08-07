@@ -6,14 +6,13 @@ Student Number 220177767
 Date April 9 2022
 
  */
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 import za.ac.cput.entity.EmployeeAddress;
 
 import java.util.Set;
-
-public interface IEmployeeAddress extends  Irepository<EmployeeAddress, String>
+@Repository
+public interface IEmployeeAddress extends JpaRepository<EmployeeAddress, String>
 {
 
-
-
-    public Set<EmployeeAddress> getAll();
 }

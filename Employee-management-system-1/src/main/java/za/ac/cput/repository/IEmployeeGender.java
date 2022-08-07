@@ -7,14 +7,12 @@ Date April 9 2022
 
  */
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 import za.ac.cput.entity.EmployeeGender;
 
-import java.util.Set;
-
-public interface IEmployeeGender extends  Irepository<EmployeeGender, String>
+@Repository
+public interface IEmployeeGender extends JpaRepository<EmployeeGender, String>
 {
 
-
-
-    public Set<EmployeeGender> getAll();
 }

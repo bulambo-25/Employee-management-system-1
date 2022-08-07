@@ -8,6 +8,6 @@ class EmployeeAddressFactoryTest {
 
     @Test
     void createEmployeeAddress() {
-        System.out.println(EmployeeAddressFactory.createEmployeeAddress());
+        System.out.println(EmployeeAddressFactory.createEmployeeAddress("1234","12345"));
     }
 }
